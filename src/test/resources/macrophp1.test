@@ -1,6 +1,6 @@
 .runTransformations
 .#-----------------------------------------------------
-.input|xwiki/2.0
+.input|xwiki/2.1
 .# Verify basic functionality of the PHP macro.
 .#-----------------------------------------------------
 {{php}}

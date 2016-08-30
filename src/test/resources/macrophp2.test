@@ -1,6 +1,6 @@
 .runTransformations
 .#-----------------------------------------------------
-.input|xwiki/2.0
+.input|xwiki/2.1
 .# Verify php macro does not fail with null content
 .#-----------------------------------------------------
 {{php/}}{{php}}{{/php}}{{php}}<?php ?>{{/php}}
