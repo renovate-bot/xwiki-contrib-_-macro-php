@@ -28,9 +28,9 @@
     <version>6.4-3</version>
   </parent>
   <artifactId>macro-php</artifactId>
-  <version>4.0.46-SNAPSHOT</version>
   <name>PHP Macro</name>
   <!-- Synchronized with Quercus version -->
+  <version>4.0.46-SNAPSHOT</version>
   <description>Rendering macro to execute PHP script</description>
   <properties>
     <!--
@@ -91,4 +91,29 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <developers>
+    <developer>
+      <id>tmortagne</id>
+      <name>Thomas Mortagne</name>
+      <email>thomas.mortagne at xwiki.com</email>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>xwikidev</id>
+      <name>XWiki Development Team</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/xwiki-contrib/macro-php.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-php.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/macro-php</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+   <system>jira</system>
+   <url>http://jira.xwiki.org/jira/browse/PHP</url>
+ </issueManagement>
 </project>
