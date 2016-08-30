@@ -39,8 +39,8 @@
     -->
     <xwiki.extension.features>
       rendering.macro:php,
-      org.xwiki.platform:xwiki-core-rendering-macro-php,
-      org.xwiki.platform:xwiki-platform-rendering-macro-php
+      org.xwiki.platform:xwiki-core-rendering-macro-php/8.3,
+      org.xwiki.platform:xwiki-platform-rendering-macro-php/8.3
     </xwiki.extension.features>
 
     <!-- Old names of this module used for retro compatibility when resolving dependencies of old extensions -->
