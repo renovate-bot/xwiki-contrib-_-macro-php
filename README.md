@@ -11,5 +11,5 @@ Rendering macro to execute PHP scripts.
 * License: LGPL 2.1
 * Translations: N/A
 * Sonar Dashboard: N/A
-* Continuous Integration Status: [![Build Status](http://ci.xwiki.org/buildStatus/icon?job=Contrib%20-%20PHP)](http://ci.xwiki.org/job/Contrib%20-%20PHP%20Macro/)
+* Continuous Integration Status: [![Build Status](http://ci.xwiki.org/buildStatus/icon?job=Contrib%20-%20PHP%20Macro)](http://ci.xwiki.org/job/Contrib%20-%20PHP%20Macro/)
 
