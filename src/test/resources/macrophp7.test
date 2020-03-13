@@ -4,9 +4,15 @@
 .# Verify that the macro supports bindings
 .#-----------------------------------------------------
 {{php}}
-<?php echo($var.toString()); ?>
+<?php echo($var->foo()); ?>
 {{/php}}
 .#-----------------------------------------------------
-.expect|event/1.0|skip
-.# Disabled because of https://jira.xwiki.org/browse/PHP-3
+.expect|event/1.0
 .#-----------------------------------------------------
+beginDocument
+beginMacroMarkerStandalone [php] [] [<?php echo($var->foo()); ?>]
+beginParagraph
+onWord [result]
+endParagraph
+endMacroMarkerStandalone [php] [] [<?php echo($var->foo()); ?>]
+endDocument

@@ -29,7 +29,6 @@ import org.junit.runner.RunWith;
 import org.xwiki.rendering.macro.script.ScriptMockSetup;
 import org.xwiki.rendering.test.integration.RenderingTestSuite;
 import org.xwiki.script.ScriptContextManager;
-import org.xwiki.script.service.ScriptServiceManager;
 import org.xwiki.test.jmock.MockingComponentManager;
 
 /**
@@ -42,6 +41,20 @@ import org.xwiki.test.jmock.MockingComponentManager;
 @RunWith(RenderingTestSuite.class)
 public class IntegrationTests
 {
+    public class TestClass
+    {
+        public String foo()
+        {
+            return "result";
+        }
+
+        @Override
+        public String toString()
+        {
+            return "value";
+        }
+    }
+
     @RenderingTestSuite.Initialized
     public void initialize(MockingComponentManager componentManager) throws Exception
     {
@@ -52,7 +65,7 @@ public class IntegrationTests
         // Script Context Mock
         final ScriptContextManager scm = componentManager.registerMockComponent(mockery, ScriptContextManager.class);
         final SimpleScriptContext scriptContext = new SimpleScriptContext();
-        scriptContext.setAttribute("var", "value", ScriptContext.ENGINE_SCOPE);
+        scriptContext.setAttribute("var", new TestClass(), ScriptContext.ENGINE_SCOPE);
 
         mockery.checking(new Expectations()
         {
