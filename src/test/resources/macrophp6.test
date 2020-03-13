@@ -1,0 +1,18 @@
+.runTransformations
+.#-----------------------------------------------------
+.input|xwiki/2.1
+.# Verify that the macro supports bindings
+.#-----------------------------------------------------
+{{php}}
+<?php echo($var); ?>
+{{/php}}
+.#-----------------------------------------------------
+.expect|event/1.0
+.#-----------------------------------------------------
+beginDocument
+beginMacroMarkerStandalone [php] [] [<?php echo($var); ?>]
+beginParagraph
+onWord [value]
+endParagraph
+endMacroMarkerStandalone [php] [] [<?php echo($var); ?>]
+endDocument

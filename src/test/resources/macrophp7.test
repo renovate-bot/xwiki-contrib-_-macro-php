@@ -1,0 +1,12 @@
+.runTransformations
+.#-----------------------------------------------------
+.input|xwiki/2.1
+.# Verify that the macro supports bindings
+.#-----------------------------------------------------
+{{php}}
+<?php echo($var.toString()); ?>
+{{/php}}
+.#-----------------------------------------------------
+.expect|event/1.0|skip
+.# Disabled because of https://jira.xwiki.org/browse/PHP-3
+.#-----------------------------------------------------

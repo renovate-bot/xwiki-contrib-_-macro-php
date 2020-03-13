@@ -25,12 +25,12 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform</artifactId>
-    <version>6.4-3</version>
+    <version>6.4-10</version>
   </parent>
   <artifactId>macro-php</artifactId>
   <name>PHP Macro</name>
   <!-- Synchronized with Quercus version -->
-  <version>4.0.47-SNAPSHOT</version>
+  <version>4.0.63-SNAPSHOT</version>
   <description>Rendering macro to execute PHP script</description>
   <properties>
     <!--
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>com.caucho</groupId>
       <artifactId>quercus</artifactId>
-      <version>4.0.46</version>
+      <version>4.0.63</version>
     </dependency>
 
     <!-- Testing dependencies -->
