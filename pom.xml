@@ -48,6 +48,11 @@
 
     <xwiki.release.jira.skip>false</xwiki.release.jira.skip>
     <xwiki.issueManagement.jira.id>PHP</xwiki.issueManagement.jira.id>
+
+    <!-- Components -->
+    <xwiki.extension.components>
+      org.xwiki.rendering.macro.Macro/php
+    </xwiki.extension.components>
   </properties>
   <dependencies>
     <dependency>
