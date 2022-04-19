@@ -30,7 +30,7 @@
   <artifactId>macro-php</artifactId>
   <name>PHP Macro</name>
   <!-- Synchronized with Quercus version -->
-  <version>4.0.66</version>
+  <version>4.0.66.1-SNAPSHOT</version>
   <description>Rendering macro to execute PHP script</description>
   <properties>
     <!--
@@ -117,7 +117,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/macro-php.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-php.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-php</url>
-    <tag>macro-php-4.0.66</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
